@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_question_question_data",
+  "info": {
+    "name": "questionData",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "string"
+    }
+  }
+}

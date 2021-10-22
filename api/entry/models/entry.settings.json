@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entries",
+  "info": {
+    "name": "Entry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 3,
+      "maxLength": 100
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 3,
+      "regex": "^[a-z0-9]+(?:.-[a-z0-9]+)*$"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 250
+    },
+    "dueDate": {
+      "type": "date"
+    },
+    "class": {
+      "type": "enumeration",
+      "enum": [
+        "en",
+        "de",
+        "math",
+        "geo"
+      ],
+      "required": true
+    },
+    "questionData": {
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question-data"
+    }
+  }
+}
