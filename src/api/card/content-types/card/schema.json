@@ -22,6 +22,21 @@
       "type": "customField",
       "customField": "plugin::field-uuid.uuid",
       "required": true
+    },
+    "class": {
+      "type": "enumeration",
+      "enum": [
+        "en",
+        "de"
+      ],
+      "required": true
+    },
+    "questions": {
+      "displayName": "question",
+      "type": "component",
+      "repeatable": true,
+      "component": "question.question",
+      "required": true
     }
   }
 }
