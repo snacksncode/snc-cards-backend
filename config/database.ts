@@ -7,7 +7,7 @@ export default ({ env }) => ({
       database: env("PGDATABASE"),
       user: env("PGUSER"),
       password: env("PGPASSWORD"),
-      ssl: env.bool("DB_SSL"),
+      ssl: false,
     },
   },
 });
