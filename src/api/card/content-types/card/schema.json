@@ -4,7 +4,8 @@
   "info": {
     "singularName": "card",
     "pluralName": "cards",
-    "displayName": "Card"
+    "displayName": "Card",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,11 @@
       "required": true,
       "unique": true,
       "minLength": 1
+    },
+    "slug": {
+      "type": "customField",
+      "customField": "plugin::field-uuid.uuid",
+      "required": true
     }
   }
 }
