@@ -27,7 +27,8 @@
       "type": "enumeration",
       "enum": [
         "en",
-        "de"
+        "de",
+        "geo"
       ],
       "required": true
     },
